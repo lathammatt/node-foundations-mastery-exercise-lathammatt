@@ -8,8 +8,8 @@ let counter = 0;
 
 transformer._transform = (data, enc, cb) => {
 	if (counter < 10){
-		counter++;
 	cb(null, `${data}\n`)
+		counter++;
 	} else {
 		cb()
 	}
